@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+
+    <link rel="stylesheet" href="stylePage.css">
+    <link rel="stylesheet" href="input.css">
+    <title>landing page</title>
+</head>
+<body>
+    <nav class="bg-purple-950 font-bold  flex justify-between"  >
+        <button class="sidebar-toggle px-4 ">
+            <i class="fa fa-bars text-white text-2xl" aria-hidden="true"></i >
+        </button>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+              <h1 class="text-2xl font-bold">GitaSoulConnect</h1>
+              <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+              <li>
+                <a href="index.html">home</a>
+              </li>
+              <li>
+                <a href="#">Search Verse</a>
+              </li>
+              <li>
+                <a href="#">Daily Verse</a>
+              </li>
+              <li>
+                <a href="#">Stories and Animation</a>
+              </li>
+              <li>
+                <a href="#">Discussion Forum</a>
+              </li>
+              <li>
+                <a href="#">Like minded people community</a>
+              </li>
+              <li>
+                <a href="#">Your Downloads</a>
+              </li>
+              <li>
+                <a href="#">Additional Settings</a>
+              </li>
+             
+            </ul>
+            <!-- social media -->
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-behance"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-sketch"></i>
+                </a>
+              </li>
+            </ul>
+          </aside>
+        <span class="text-white font-bold  flex  items-center mr-[40rem] text-2xl">GitaSoulConnect</span>
+        <ul class = "px-32 py-4 flex space-x-12 justify-end cursor-pointer">
+             <!-- <li class="text-white">Home </li>
+             <li class="text-white">About</li>
+             <li class="text-white">contact us</li> -->
+             <li class="text-white">Login / Register</li>
+        </ul>
+    </nav>
+    <main class="bg-purple-300 flex justify-around">
+    <div class="flex flex-col">
+        <select name="select" id="select" class="w-80 h-8 mx-auto  text-center mt-48 rounded-lg">
+            <option value="" >----Select language----</option>
+            <option value="English">English</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Sanskrit">Sanskrit</option>
+        </select>
+        <div class="book-container w-80 h-96 bg-gray-300  my-auto mx-40 mb-20">
+    </div>
+     
+
+       
+    </div>
+    <div class="flex items-start mx-10  px-52 pt-60">
+        <input type="search" placeholder=" Search / Chatbot" class="w-80 h-10 rounded-xl text-center">
+    </div>
+    
+   
+      
+      <!-- javascript -->
+      <script src="app.js"></script>
+</main>
+</body>
+</html> 
