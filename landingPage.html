@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- importing pdf.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link
       rel="stylesheet"
@@ -13,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="stylePage.css" />
+    <!-- <link rel="stylesheet" href="stylePage.css" /> -->
     <link rel="stylesheet" href="input.css" />
     <title>landing page</title>
   </head>
@@ -95,7 +97,7 @@
         <li class="text-white">Login / Register</li>
       </ul>
     </nav>
-    <main class="bg-purple-300 flex justify-around">
+    <main class="bg-violet-300 flex justify-around">
       <!-- language choose -->
       <div class="flex flex-col my-0">
         <select
@@ -110,10 +112,19 @@
           <option value="Sanskrit">Sanskrit</option>
         </select>
         <!-- container for book -->
-        <div class="book-container w-80 h-96 bg-gray-300 my-2 mx-40 mb-20">
-          Book
+        <div class="book-container  w-80 h-96 my-2 mx-40 mb-20">
+          <div class="container">
+            <h4>Bhagavad Gita</h4>
+            <div id="pdf-container"></div>
+            <div class="navigation">
+                <button class="pdf-btn"  id="prev-page">Previous Page</button>
+                <span id="current-page">1</span>
+                <button class="pdf-btn"  id="next-page">Next Page</button>
+            </div>
+        </div>
         </div>
       </div>
+      <!-- search bar  -->
       <div class=" mx-15 px-52 pt-44">
         <input
           type="search"
@@ -121,9 +132,11 @@
           class="w-80 h-10 rounded-xl text-center"
         />
       </div>
+      
 
       <!-- javascript -->
       <script src="app.js"></script>
     </main>
+    
   </body>
 </html>
